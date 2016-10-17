@@ -7,11 +7,11 @@ module BasicScopes
 	included do
 		class << self
 			def latest
-				self.order_by(created_at: :desc)
+				self.order(created_at: :desc)
 			end
 
 			def latest_reverse
-				self.order_by(created_at: :asc)
+				self.order(created_at: :asc)
 			end
 		end
 
