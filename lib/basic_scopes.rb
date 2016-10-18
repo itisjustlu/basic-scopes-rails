@@ -1,23 +1,14 @@
-require "active_record"  unless defined?(ActiveRecord)
-require "active_support" unless defined?(ActiveSupport)
+require 'active_support/concern'
+require 'active_record'
 
 module BasicScopes
 	extend ActiveSupport::Concern
 
 	included do
-		class << self
-			def latest
-				self.order(created_at: :desc)
-			end
-
-			def latest_reverse
-				self.order(created_at: :asc)
-			end
-		end
-
+		scope :latest, -> { order(created_at: :desc) }
+		scope :latest_reverse, -> { order(created_at: :asc) }
 	end
-
 end
 
 # include the extension
-ActiveRecord::Base.send :include, BasicScopes
+ActiveRecord::Base.send(:include, BasicScopes)
