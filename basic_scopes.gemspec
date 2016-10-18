@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name        = 'basic_scopes'
-	s.version     = '0.0.3'
+	s.version     = '0.1.0'
 	s.date        = '2016-10-16'
 	s.summary     = 'Basic scopes, Rails 5!'
 	s.description = 'Basic scopes to your ActiveRecord'
