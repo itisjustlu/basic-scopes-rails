@@ -1,7 +1,7 @@
 Gem::Specification.new do |gem|
 	gem.name        = 'basic-scopes-rails'
-	gem.version     = '0.1.5'
-	gem.date        = '2016-10-16'
+	gem.version     = '0.1.6'
+	gem.date        = '2016-10-27'
 	gem.summary     = 'Basic scopes, Rails 5!'
 	gem.description = 'Basic scopes to your ActiveRecord'
 	gem.authors     = ['Lucas Juarez']
