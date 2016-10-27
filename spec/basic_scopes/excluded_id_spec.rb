@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Basic scope' do
+describe 'Basic scopes #excluded_ids' do
   before(:each) do
     @article = Article.create({title: 'Id 1'})
     @article_x = Article.create({title: 'Id 2'})

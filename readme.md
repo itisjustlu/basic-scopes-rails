@@ -25,6 +25,8 @@ You can use basic scopes as normal scopes in your Active Record
 * **latest_reverse**, It returns the firstest elements, order by created_at
 * **excluded_ids([array_ids])**, It excludes an array of ids
 * **excluded_id(id)**, It excludes an id
+* **by_attribute(attr)**, It returns ordered by attribute in asc sense
+* **by_attribute_reverse(attr)**, It returns ordered by attribute in desc sense
 
 ### Example
 ```

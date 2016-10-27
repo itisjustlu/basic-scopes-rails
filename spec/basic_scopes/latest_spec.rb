@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Basic scope' do
+describe 'Basic scopes #latest' do
 	before(:each) do
 		@article = Article.create({created_at: Time.now, title: 'Recent'})
 		@article_x = Article.create({created_at: 10.minutes.ago, title: 'Older'})
