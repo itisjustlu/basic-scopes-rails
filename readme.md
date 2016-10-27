@@ -1,6 +1,6 @@
 ##Basic scopes for Rails  5
 
-This gem append a few methods to your active record models. 
+This gem appends a few methods to your active record models. 
 You won't need to create newest scopes for every single project.
 
 ###How to install?
